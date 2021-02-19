@@ -257,20 +257,18 @@ export default class WarthogWrapper {
     const envConfig = dotenv.parse(fs.readFileSync('.env'))
 
     // Override DB_NAME, PORT, ...
-    envConfig['WARTHOG_DB_DATABASE'] =
-      process.env.DB_NAME || envConfig['WARTHOG_DB_DATABASE']
-    envConfig['WARTHOG_DB_USERNAME'] =
-      process.env.DB_USER || envConfig['WARTHOG_DB_USERNAME']
-    envConfig['WARTHOG_DB_PASSWORD'] =
-      process.env.DB_PASS || envConfig['WARTHOG_DB_PASSWORD']
-    envConfig['WARTHOG_DB_HOST'] =
-      process.env.DB_HOST || envConfig['WARTHOG_DB_HOST']
-    envConfig['WARTHOG_DB_PORT'] =
-      process.env.DB_PORT || envConfig['WARTHOG_DB_PORT']
-    envConfig['WARTHOG_APP_PORT'] =
-      process.env.GRAPHQL_SERVER_PORT || envConfig['WARTHOG_APP_PORT']
-    envConfig['WARTHOG_APP_HOST'] =
-      process.env.GRAPHQL_SERVER_HOST || envConfig['WARTHOG_APP_HOST']
+    envConfig.WARTHOG_DB_DATABASE =
+      process.env.DB_NAME || envConfig.WARTHOG_DB_DATABASE
+    envConfig.WARTHOG_DB_USERNAME =
+      process.env.DB_USER || envConfig.WARTHOG_DB_USERNAME
+    envConfig.WARTHOG_DB_PASSWORD =
+      process.env.DB_PASS || envConfig.WARTHOG_DB_PASSWORD
+    envConfig.WARTHOG_DB_HOST = process.env.DB_HOST || envConfig.WARTHOG_DB_HOST
+    envConfig.WARTHOG_DB_PORT = process.env.DB_PORT || envConfig.WARTHOG_DB_PORT
+    envConfig.WARTHOG_APP_PORT =
+      process.env.GRAPHQL_SERVER_PORT || envConfig.WARTHOG_APP_PORT
+    envConfig.WARTHOG_APP_HOST =
+      process.env.GRAPHQL_SERVER_HOST || envConfig.WARTHOG_APP_HOST
 
     const newEnvConfig = Object.keys(envConfig)
       .map((key) => `${key}=${envConfig[key]}`)
