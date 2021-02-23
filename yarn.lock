@@ -4701,7 +4701,7 @@ event-emitter@^0.3.5:
     d "1"
     es5-ext "~0.10.14"
 
-eventemitter3@^3.1.0:
+eventemitter3@^3.1.0, eventemitter3@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
@@ -5597,6 +5597,15 @@ graphql-scalars@^1.2.6:
   integrity sha512-CCL9aaZdK1VD2jYFCF0ONB1cT5brK9DXymSuu/E/JoYLmAaLwGgjdzY66mT2ZI5oOIrSrJqWTf4y20qdSaE4MQ==
   dependencies:
     tslib "~2.0.3"
+
+graphql-subscriptions-client@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/graphql-subscriptions-client/-/graphql-subscriptions-client-0.16.0.tgz#47242439e049e40fa24bbfad337676798226f9bf"
+  integrity sha512-z4bkRIvzHdnpydHUlgKlYIXFm/9kjG1hFBozQXSvfUEhqYshNk3/nyWJ7D/tChyDCSB9lZG4YE5uRWEy5+boTA==
+  dependencies:
+    backo2 "^1.0.2"
+    eventemitter3 "^3.1.2"
+    symbol-observable "^1.2.0"
 
 graphql-subscriptions@^1.0.0, graphql-subscriptions@^1.1.0:
   version "1.2.0"
@@ -10738,7 +10747,7 @@ supports-hyperlinks@^2.0.0, supports-hyperlinks@^2.1.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-symbol-observable@^1.0.4, symbol-observable@^1.1.0:
+symbol-observable@^1.0.4, symbol-observable@^1.1.0, symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
