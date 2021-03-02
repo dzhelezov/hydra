@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 2.1.0-beta.2 (2021-03-02)
+
+**Note:** Version bump only for package hydra-e2e-tests
+
+
+
+
+
 # 2.1.0-beta.1 (2021-03-02)
 
 **Note:** Version bump only for package hydra-e2e-tests
