@@ -1,5 +1,6 @@
 {
   "name": "@dzlzv/apps-config",
+  "private": "true",
   "description": "A fork of @polkdatjs/apps-config suitable for vanilla ts imports",
   "version": "2.1.0-beta.2",
   "main": "lib/index.js",
