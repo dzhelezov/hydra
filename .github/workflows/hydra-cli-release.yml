@@ -40,9 +40,14 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           yarn lerna version --conventional-commits --yes
-      - name: Lerna publish 
+      - name: Lerna publish next
+        if: steps.extract_branch.outputs.branch != 'master'
         run: |
-          yarn lerna publish from-git --dist-tag next --yes
+          yarn lerna publish from-git --dist-tag dev --yes
+      - name: Lerna release from master
+        if: steps.extract_branch.outputs.branch == 'master'
+        run: |
+          yarn lerna publish from-git --dist-tag latest --yes
       #  if: steps.check.outputs.changed == 'true'
       #  run: |
       #    git config --global user.name 'github-actions'
