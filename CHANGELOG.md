@@ -1,3 +1,19 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+### [2.0.1-beta.3](https://github.com/dzhelezov/hydra/compare/v2.0.1-beta.2...v2.0.1-beta.3) (2021-03-04)
+
+
+### Bug Fixes
+
+* test fix ([8569581](https://github.com/dzhelezov/hydra/commit/85695816271976adf23134312415130570813b92))
+* test fix ([62138ae](https://github.com/dzhelezov/hydra/commit/62138ae4af959290ea9f7323eeaaaf057d79d576))
+* **hydra-cli:** test fix ([a3d9757](https://github.com/dzhelezov/hydra/commit/a3d9757bc9dcebb5058db57831215bd45b6c400f))
+
+
+
 # [](https://github.com/dzhelezov/hydra/compare/v2.0.1-beta.2...v) (2021-03-04)
 
 ## [0.1.2](https://github.com/dzhelezov/hydra/compare/v0.0.4...v0.1.2) (2020-11-16)
@@ -51,6 +67,3 @@
 * **indexer:** add getMany to return multiple result from db ([d1049aa](https://github.com/dzhelezov/hydra/commit/d1049aa181221dd786aa41ed3a54b184bd89c131))
 * **mappings:** add handlers for avatar and handle ([a99a0da](https://github.com/dzhelezov/hydra/commit/a99a0da67606a388105a180a844b353f410f33cb))
 * **mappings:** add mappings for rootAccount, controllerAccount ([652763e](https://github.com/dzhelezov/hydra/commit/652763e597415d9616086ed72d504366e0e2a20b))
-
-
-
